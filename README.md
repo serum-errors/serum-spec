@@ -86,7 +86,7 @@ For languages that don't yet have premade libraries, see the ["In General" secti
 	- You can use https://github.com/serum-errors/go-serum for premade types that comply nicely with the Serum spec.
 	- You can also write your own!
 - Tools:
-	- See https://github.com/serum-errors/go-serum-analysis for a static analyzer which verifies Serum errors are propagated, handled, and documented accurately.
+	- See https://github.com/serum-errors/go-serum-analyzer for a static analyzer which verifies Serum errors are propagated, handled, and documented accurately.
 		- Analysis uses a taint model: all possible codes that a function can return are determined; then the analyzer requires that the documentation of the function states the same set, or emits warnings about the difference.
 		- Analysis is mostly automatic and you control it by structuring your code flow to handle errors.  In cases where your code is more complex than the analyzer can understand, you can manually declare changes to the expected error set on return sites, if necessary.
 		- Works with any `error` type that has a `Code() string` method -- use of the official go-serum library is in no way required!
