@@ -8,6 +8,16 @@ The goals are:
 - to have human readable, and also search-engine friendly errors;
 - and to promote rigorous error handling, and be amenable to static analysis.
 
+In short:
+
+```json
+{
+  "code": "error-codes-matter",
+  "message": "messages matter too",
+  "details": {"extensible": "yet simple"}
+}
+```
+
 
 How Errors Should Be
 --------------------
@@ -21,6 +31,10 @@ and then with that in mind, can begin to recommend library designs and usage con
 You can continue scrolling down to go the "principles" route,
 or if you're hands-on type, [jump to serialization examples](#serum-serialization)
 or jump to [information about libraries you can use to easily adopt Serum](#working-with-serum)
+
+
+Principles
+----------
 
 ### Part I
 
