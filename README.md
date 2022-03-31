@@ -1,12 +1,18 @@
 Serum Errors
 ============
 
-"Serum" errors are a set of simple standards for errors, error handling, and error serialization.
+"Serum" is a simple standard for errors and error serialization.
+
+Serum aims to be a common-sense, "just enough" standard -- easy to adopt, easy to extend, easy to describe.
+It specifies enough to be meaningful, but not so much that it becomes complicated.
 
 The goals are:
 - to have observable, serializable, cross-langauge errors;
 - to have human readable, and also search-engine friendly errors;
 - and to promote rigorous error handling, and be amenable to static analysis.
+
+Serum describes a simple format (canonically, in JSON), and a couple of conventions for using it.
+(It can be other serial formats too.  JSON is just clear and widely-known.)
 
 In short:
 
@@ -17,6 +23,12 @@ In short:
   "details": {"extensible": "yet simple"}
 }
 ```
+
+You don't need any particular library to use Serum, and you don't need to be in any particular programming language.
+It's easy to conform to Serum, with or without library support.
+
+Keep reading for more details, below.
+
 
 
 How Errors Should Be
