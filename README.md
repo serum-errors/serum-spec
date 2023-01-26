@@ -7,7 +7,7 @@ Serum aims to be a common-sense, "just enough" standard -- easy to adopt, easy t
 It specifies enough to be meaningful, but not so much that it becomes complicated.
 
 The goals are:
-- to have observable, serializable, cross-langauge errors;
+- to have observable, serializable, cross-language errors;
 - to have human readable, and also search-engine friendly errors;
 - and to promote rigorous error handling, and be amenable to static analysis.
 
